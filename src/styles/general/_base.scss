@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--Roboto);
+  color: var(--black-main);
+  background-color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--blue-main);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}

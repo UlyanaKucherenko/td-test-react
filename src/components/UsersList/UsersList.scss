@@ -1,0 +1,49 @@
+.users-list {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  overflow-y: scroll;
+  height: calc(100vh - var(--header-height) - 16px);
+  padding-right: 16px;
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  &__item-content {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__item-letter {
+    margin-bottom: 16px;
+    width: 100%;
+    color: var(--blue-darken);
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--yellow-light);
+  }
+
+  &__item-name {
+    color: var(--blue-darken);
+    font-weight: 700;
+  }
+
+  &__item-name-active {
+    color: var(--blue-darken-1);
+  }
+
+  &__item-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

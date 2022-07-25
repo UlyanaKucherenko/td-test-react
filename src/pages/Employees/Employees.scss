@@ -1,0 +1,20 @@
+.employees {
+
+  &__container {
+    display: flex;
+  }
+
+  &__col {
+    width: 65%;
+
+    &:last-child {
+      width: 35%;
+    }
+  }
+
+  &__title{
+    height: var(--header-height);
+    padding: 10px;
+    text-align: center;
+  }
+}
